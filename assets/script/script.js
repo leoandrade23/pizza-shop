@@ -18,7 +18,7 @@ pizzaJson.map((item, index) => {
   // Foto das Pizzas
   pizzaItem.querySelector(
     ".pizza-item--img img"
-  ).src = `_assets/_media/${item.img}`;
+  ).src = `assets/media/${item.img}`;
 
   // Preço da Pizza no Formato PT-BR
   pizzaItem.querySelector(
@@ -54,7 +54,7 @@ pizzaJson.map((item, index) => {
     modalKey = key;
 
     // Preencher as informações da tela de seleção buscando o valor de "key" no JSON
-    qS(".pizzaBig img").src = `_assets/_media/${pizzaJson[key].img}`;
+    qS(".pizzaBig img").src = `assets/media/${pizzaJson[key].img}`;
     qS(".pizzaInfo h1").innerHTML = pizzaJson[key].name;
     qS(".pizzaInfo--desc").innerHTML = pizzaJson[key].description;
     qS(".pizzaInfo--actualPrice").innerHTML = pizzaJson[
@@ -187,7 +187,7 @@ const updateCart = () => {
       // Preenchendo as informações em ".cart--item" com base nos dados de "pizzaItem"
       cartItem.querySelector(
         ".cart--item img"
-      ).src = `_assets/_media/${pizzaItem.img}`;
+      ).src = `assets/media/${pizzaItem.img}`;
 
       // O Nome tem um template string para concatenar o Nome com o Tamanho
       cartItem.querySelector(".cart--item-nome").innerHTML = `${
